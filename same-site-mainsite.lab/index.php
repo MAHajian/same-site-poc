@@ -60,8 +60,7 @@ Route::add('/set_cookie', function(){
         'expires' => time() + 86400,
         'path' => '/',
         'secure' => false,
-        'httponly' => true,
-        'samesite' => 'None',
+        'httponly' => true
     ]);
 
     setcookie('lax-test', 'SecurityFlow-Lax-cookie', [
